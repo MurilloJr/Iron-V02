@@ -1,0 +1,98 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    height: 40px;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+
+}
+
+
+
+button {
+    margin-right: 10px;
+}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-template-areas: 
+    "text photos photos photos photos"
+    
+}
+
+#text {
+    max-width: 30vw;
+    padding: 20px;
+    justify-content: center;
+    text-align: justify;
+    line-height: 25px;
+    font-size: large;
+}
+
+#photos {
+    margin-left: -20px;
+    
+}
+
+#text {
+    grid-area: text;
+}
+
+#photos {
+    grid-area: photos;
+}
+
+.dormindo {
+    background-image: url(Images/Sono.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.acordado {
+    background-image: url(Images/Acordei.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sorridente {
+    background-image: url(Images/Sorriso.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media (max-width: 850px){
+
+    
+     nav {
+        display: flex;
+        height: auto;
+        }
+
+    button {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    #container {
+        display: grid;
+        grid-template-areas: 
+        "photos"
+        "text"
+        ;
+    }
+
+    
+}
+    
